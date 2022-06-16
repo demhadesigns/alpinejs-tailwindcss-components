@@ -7,6 +7,7 @@ This list will be expanded gradually.
 ## All components
 
 - **[Multi-Select](#multi-select)** [(watch youtube tutorial)](https://youtu.be/wQ7fN-1GrV0)
+- **[Accordion](#accordion)** [(youtube video not available yet)]()
 
 ### Multi-Select
 ---
@@ -31,4 +32,19 @@ This dropdown component allows you to select multiple elements and renders selec
 | itemHeight | Defines the height of a dropdown element in px | `itemHeight: 100` | `40` 
 | maxItemChars | Defines the maximum amount of characters of a dropdown element (creates a substring and appends three dots) | `maxItemChars: 100` | `50` 
 | maxTagChars | Defines the maximum amount of characters of a tag element (creates a substring and appends three dots) | `maxItemChars: 10` | `25` 
+
+### Accordion
+---
+
+A simple accordion component which uses the alpineJS `collapse` plugin.
+
+#### Preview
+
+`coming soon...`
+
+#### Options
+
+| Property | Description | Structure | Default
+| ----------- | ----------- | ----------- | ----------- |
+| expanded | Defines whether the accordion is expanded or not | `expanded: false` | `false` 
 
