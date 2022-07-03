@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modal Component: @alpinejs, @tailwindcss</title>
+
+    <!-- Dependencies -->
+
+    <!-- AlpineJS Core -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="p-12 bg-gray-900 flex flex-col items-center min-h-screen">
+    <div class="mt-12">
+      <h1 class="text-3xl text-center font-bold text-amber-300 mb-1">
+        Custom Modal Component
+      </h1>
+      <h2 class="text-xl text-center text-amber-300">AlpineJS + TailwindCSS</h2>
+    </div>
+
+    <div class="w-full mt-24 max-w-lg">
+      <!-- Start Component -->
+      <div x-data="{ isOpen: false }" class="flex justify-center">
+        <!-- Overlay Background -->
+        <div
+          class="bg-black bg-opacity-75 fixed top-0 left-0 w-full h-full z-10 transition"
+          x-show="isOpen"
+          x-transition:enter="transition ease-out duration-200"
+          x-transition:enter-start="opacity-0"
+          x-transition:enter-end="opacity-100"
+          x-transition:leave="transition ease-in delay-200 duration-200"
+          x-transition:leave-start="opacity-100"
+          x-transition:leave-end="opacity-0"
+        ></div>
+        <!-- Modal Content -->
+        <div
+          class="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border border-amber-200 rounded-md text-white p-6 z-20"
+          x-show="isOpen"
+          x-transition:enter="transition ease-out duration-500 delay-200"
+          x-transition:enter-start="opacity-0 scale-75"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-75"
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quidem
+            earum iusto excepturi magni, ipsa aliquid illo ab debitis dolores
+            itaque voluptatem fugit accusamus molestiae consequatur obcaecati
+            nulla, nostrum ea.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+            consectetur tempore odit error dolore, nam facere delectus
+            voluptatibus amet quia iste debitis porro ratione ea. Ullam, cumque?
+            Dolorum, dolorem deserunt!
+          </p>
+          <button
+            class="text-white border border-amber-200 px-4 py-2 rounded-md hover:bg-amber-200 hover:text-black transition ml-auto block mt-6"
+            @click="isOpen = false"
+          >
+            Close Modal
+          </button>
+        </div>
+
+        <button
+          class="text-white border border-amber-200 px-4 py-2 rounded-md mx-auto hover:bg-amber-200 hover:text-black transition"
+          @click="isOpen = true"
+        >
+          Open Modal
+        </button>
+      </div>
+      <!-- End Component -->
+    </div>
+  </body>
+</html>
