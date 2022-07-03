@@ -38,7 +38,7 @@
         <!-- Accordion Head Start -->
         <button
           @click="expanded = !expanded"
-          class="relative w-full flex justify-between items-center border border-amber-200 rounded text-white p-4"
+          class="w-full flex justify-between items-center border border-amber-200 rounded text-white p-4"
         >
           <h2>Collapse me!</h2>
 
@@ -50,7 +50,7 @@
             height="24"
             stroke-width="0"
             fill="#fff"
-            class="absolute right-2 top-1/2 -translate-y-1/2 transition"
+            class="transition"
             :class="{ '-rotate-180': expanded }"
           >
             <path
