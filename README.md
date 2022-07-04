@@ -7,7 +7,7 @@ This list will be expanded gradually.
 ## All components
 
 - **[Multi-Select](#multi-select)** [(watch youtube tutorial)](https://youtu.be/wQ7fN-1GrV0)
-- **[Accordion](#accordion)** [(youtube video not available yet)]()
+- **[Accordion](#accordion)** [(watch youtube tutorial)](https://youtu.be/JovYgM6Ebag)
 
 ### Multi-Select
 ---
