@@ -8,6 +8,7 @@ This list will be expanded gradually.
 
 - **[Multi-Select](#multi-select)** [(watch youtube tutorial)](https://youtu.be/wQ7fN-1GrV0)
 - **[Accordion](#accordion)** [(watch youtube tutorial)](https://youtu.be/JovYgM6Ebag)
+- **[Modal](#modal)** [(video coming soon)]()
 
 ### Multi-Select
 ---
@@ -36,15 +37,31 @@ This dropdown component allows you to select multiple elements and renders selec
 ### Accordion
 ---
 
-A simple accordion component which uses the alpineJS `collapse` plugin.
+A simple accordion component which uses the alpineJS [collapse](https://alpinejs.dev/plugins/collapse) plugin.
 
 #### Preview
 
-`coming soon...`
+<img src="./components/accordion/preview.gif" alt="Accordion preview" width="640">
 
 #### Options
 
 | Property | Description | Structure | Default
 | ----------- | ----------- | ----------- | ----------- |
 | expanded | Defines whether the accordion is expanded or not | `expanded: false` | `false` 
+
+### Modal
+---
+
+A beautiful modal component with nice animations. 
+The animations are independent from each other - one is applied to the background-overlay and another to the modal itself.
+
+#### Preview
+
+<img src="./components/modal/preview.gif" alt="Modal preview" width="640">
+
+#### Options
+
+| Property | Description | Structure | Default
+| ----------- | ----------- | ----------- | ----------- |
+| isOpen | Defines whether the modal is open or not | `isOpen: false` | `false` 
 
