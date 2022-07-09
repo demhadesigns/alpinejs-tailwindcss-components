@@ -52,7 +52,7 @@ A simple accordion component which uses the alpineJS [collapse](https://alpinejs
 ### Modal
 ---
 
-A beautiful modal component with nice animations. 
+An easy built modal component with nice animations. 
 The animations are independent from each other - one is applied to the background-overlay and another to the modal itself.
 
 #### Preview
