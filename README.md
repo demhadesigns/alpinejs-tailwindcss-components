@@ -8,7 +8,7 @@ This list will be expanded gradually.
 
 - **[Multi-Select](#multi-select)** [(watch youtube tutorial)](https://youtu.be/wQ7fN-1GrV0)
 - **[Accordion](#accordion)** [(watch youtube tutorial)](https://youtu.be/JovYgM6Ebag)
-- **[Modal](#modal)** [(video coming soon)]()
+- **[Modal](#modal)** [(watch youtube tutorial)](https://youtu.be/PGF5v_PdWLw)
 
 ### Multi-Select
 ---
